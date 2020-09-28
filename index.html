@@ -16,7 +16,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#">ATHENS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,11 +24,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a class="nav-link active" href="#">MENU <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">MENU</a>
                 <a class="nav-link" href="about.html">ABOUT US</a>
                 <a class="nav-link" href="community.html">COMMUNITY INVOLVMENT</a>
-                <!-- consider making contact us a part of the home page -->
-                <a class="nav-link" href="contact.html">CONTACT US</a>
+                <a class="nav-link" href="#contact-anchor">CONTACT US</a>
             </div>
         </div>
     </nav>
@@ -50,7 +49,8 @@
                 <div class='overlay-community overlay'>
                     <h2>Community Involvment</h2>
                 </div>
-                <img class='community-img square' src='assets/img/community.png' alt='people getting involved with their community'>
+                <img class='community-img square' src='assets/img/community.png'
+                    alt='people getting involved with their community'>
             </a>
             <a class='about-square square-link' href='#'>
                 <div class='overlay-about overlay'>
@@ -73,13 +73,16 @@
             </div>
             <div class='map-info'>
                 <h2>Our Location</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nemo fugit eveniet ullam ratione
-                    quo consequatur et doloribus dolor! Maxime esse facere quo ipsa et laborum optio sint explicabo.
-                    Consequatur!</p>
+                <p>959 E Main St<br>Auburn, WA 98002</p>
+                <form class='directions-form' action="http://maps.google.com/maps" method="get" target="_blank">
+                    <input type="hidden" name="daddr" value="959 E Main St, Auburn, WA 98002" />
+                    <input type="submit" class='directionsBtn' value="Get directions" />
+                </form>
+                <!-- <button class='directionsBtn'>Get Directions</button> -->
             </div>
         </div>
 
-        <div class='contact-anchor'></div>
+        <div id='contact-anchor'></div>
         <div class='contact-div d-flex'>
             <div class='contact-desc'>
                 <h2>Contact Us</h2>
