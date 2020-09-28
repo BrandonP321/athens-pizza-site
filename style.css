@@ -22,7 +22,27 @@ footer {
     padding: 5%;
 }
 
-.directions-div {
+.directionsBtn {
+    width: 50%;
+    height: 30%;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: none;
+    transition: background-color .4s, transform .4s;
+}
+
+.directionsBtn:hover {
+    background-color: #f9be1a;
+    transform: scale(1.1);
+}
+
+.directionsBtn:focus {
+    outline: none;
+}
+
+.directions-form {
+    width: 100%;
+    height: 100%;
 }
 
 .footer-info {
@@ -103,6 +123,7 @@ footer {
     display: block;
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 
 .socials {
