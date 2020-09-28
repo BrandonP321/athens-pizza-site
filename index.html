@@ -39,16 +39,25 @@
             <img class='hero' src='assets/img/athens-logo.jpg' alt='Athens pizza and pasta logo'>
         </div>
 
-        <div class='squares-div'>
-            <div class='menu-square'>
-                <img class='menu-img square' src='http://www.placekitten.com/350/350' alt='#'>
-            </div>
-            <div class='community-square'>
-                <img class='community-img square' src='http://www.placekitten.com/350/350' alt='#'>
-            </div>
-            <div class='about-square'>
-                <img class='about-img square' src='http://www.placekitten.com/350/350' alt='#'>
-            </div>
+        <div class='squares-div d-flex'>
+            <a class='menu-square square-link' href='#'>
+                <div class='overlay-menu overlay'>
+                    <h2>Menu</h2>
+                </div>
+                <img class='menu-img square' src='assets/img/food.png' alt='#'>
+            </a>
+            <a class='community-square square-link' href='#'>
+                <div class='overlay-community overlay'>
+                    <h2>Community Involvment</h2>
+                </div>
+                <img class='community-img square' src='assets/img/community.png' alt='people getting involved with their community'>
+            </a>
+            <a class='about-square square-link' href='#'>
+                <div class='overlay-about overlay'>
+                    <h2>About Us</h2>
+                </div>
+                <img class='about-img square' src='assets/img/family.png' alt='#'>
+            </a>
         </div>
 
         <div class='restaurant-food'>
@@ -93,7 +102,7 @@
                     </div>
                     <div class='form-group'>
                         <label for='message-input'>Message</label>
-                        <textarea id='message-input'></textarea>
+                        <textarea class='form-control' id='message-input'></textarea>
                     </div>
                 </form>
             </div>
@@ -111,7 +120,7 @@
             </div>
             <div class='contact-info'>
                 <h3>Reach Out</h3>
-                <p>Brothers@athenspizzaauburn.com</p>
+                <a href='mailto:Brothers@athenspizzaauburn.com'>Brothers@athenspizzaauburn.com</a>
                 <p>(253) 939-7444</p>
             </div>
         </div>

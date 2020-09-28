@@ -6,12 +6,6 @@ main {
     margin-top: 70px;
 }
 
-textarea {
-    display: block;
-    width: 100%;
-    height: 100px;
-}
-
 footer {
     background-color: black;
     color: white;
@@ -67,6 +61,39 @@ footer {
     padding: 10%;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: calc(50% - 24px) 10% 0 10%;
+    z-index: 50;
+    transition: transform .5s, opacity .5s;
+}
+
+.overlay:hover {
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.overlay:hover ~ .square{
+    transform: scale(1.1)
+}
+
+.overlay-about {
+}
+
+.overlay-community {
+
+}
+
+.overlay-menu {
+
+}
+
 .restaurant-food {
     width: 100%;
 }
@@ -89,7 +116,18 @@ footer {
 
 .square {
     display: block;
+    width: 350px;
+    height: auto;
+    transition: transform .5s;
 }
+
+.square-link {
+    position: relative;
+}
+
+/* .square:hover {
+    transform: scale(1.1);
+} */
 
 .squares-div {
     display: flex;
