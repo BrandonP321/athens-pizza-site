@@ -1,0 +1,17 @@
+nav {
+    height: 70px;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.hero-div {
+    background-color: black;
+    padding: 70px;
+}
+
+.hero {
+    display: block;
+    margin: 0 auto;
+}
