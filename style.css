@@ -6,10 +6,10 @@ main {
     margin-top: 70px;
 }
 
-textarea {
-    display: block;
-    width: 100%;
-    height: 100px;
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
 .contact-desc {
@@ -22,14 +22,77 @@ textarea {
     padding: 5%;
 }
 
+.directions-div {
+}
+
+.footer-info {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
 .hero {
     display: block;
     margin: 0 auto;
+    width: 70%;
 }
 
 .hero-div {
     background-color: black;
-    padding: 70px;
+    padding: 2%;;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.map-div {
+    width: 50%;
+    padding: 2%;
+}
+
+.map-info {
+    width: 50%;
+    padding: 10%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: calc(50% - 24px) 10% 0 10%;
+    z-index: 50;
+    transition: transform .5s, opacity .5s;
+}
+
+.overlay:hover {
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.overlay:hover ~ .square{
+    transform: scale(1.1)
+}
+
+.overlay-about {
+}
+
+.overlay-community {
+
+}
+
+.overlay-menu {
+
 }
 
 .restaurant-food {
@@ -42,16 +105,36 @@ textarea {
     height: auto;
 }
 
-.square {
-    display: block;
+.socials {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
 }
 
+.socials, .footer-info {
+    padding: 1%;
+}
+
+.square {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform .5s;
+}
+
+.square-link {
+    position: relative;
+    width: 30%;
+}
+
+/* .square:hover {
+    transform: scale(1.1);
+} */
+
 .squares-div {
-    display: flex;
     padding-top: 10%;
     padding-bottom: 10%;
     justify-content: space-between;
     width: 60%;
     margin: 0 auto;
-    background-color: salmon;
 }
