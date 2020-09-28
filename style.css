@@ -22,6 +22,9 @@ textarea {
     padding: 5%;
 }
 
+.directions-div {
+}
+
 .hero {
     display: block;
     margin: 0 auto;
@@ -30,6 +33,21 @@ textarea {
 .hero-div {
     background-color: black;
     padding: 70px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.map-div {
+    width: 50%;
+    padding: 2%;
+}
+
+.map-info {
+    width: 50%;
+    padding: 10%;
 }
 
 .restaurant-food {
@@ -53,5 +71,4 @@ textarea {
     justify-content: space-between;
     width: 60%;
     margin: 0 auto;
-    background-color: salmon;
 }
