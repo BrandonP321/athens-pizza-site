@@ -1,0 +1,57 @@
+nav {
+    height: 70px;
+}
+
+main {
+    margin-top: 70px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.contact-desc {
+    width: 50%;
+    padding: 10%;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 5%;
+}
+
+.hero {
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-div {
+    background-color: black;
+    padding: 70px;
+}
+
+.restaurant-food {
+    width: 100%;
+}
+
+.restaurant-food-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.square {
+    display: block;
+}
+
+.squares-div {
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    background-color: salmon;
+}
