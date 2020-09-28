@@ -12,6 +12,12 @@ textarea {
     height: 100px;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
 .contact-desc {
     width: 50%;
     padding: 10%;
@@ -25,6 +31,12 @@ textarea {
 .directions-div {
 }
 
+.footer-info {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
 .hero {
     display: block;
     margin: 0 auto;
@@ -33,6 +45,11 @@ textarea {
 .hero-div {
     background-color: black;
     padding: 70px;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
 }
 
 .map {
@@ -58,6 +75,16 @@ textarea {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.socials {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.socials, .footer-info {
+    padding: 1%;
 }
 
 .square {
