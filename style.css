@@ -34,11 +34,12 @@ footer {
 .hero {
     display: block;
     margin: 0 auto;
+    width: 70%;
 }
 
 .hero-div {
     background-color: black;
-    padding: 70px;
+    padding: 2%;;
 }
 
 .icon {
@@ -116,13 +117,14 @@ footer {
 
 .square {
     display: block;
-    width: 350px;
+    width: 100%;
     height: auto;
     transition: transform .5s;
 }
 
 .square-link {
     position: relative;
+    width: 30%;
 }
 
 /* .square:hover {
@@ -130,7 +132,6 @@ footer {
 } */
 
 .squares-div {
-    display: flex;
     padding-top: 10%;
     padding-bottom: 10%;
     justify-content: space-between;
