@@ -10,6 +10,12 @@
     url('assets/fonts/roman-sd/roman_sd-webfont.woff2')
 }
 
+@font-face {
+    font-family: "Dalek Pinpoint";
+    src: url('assets/fonts/dalek-pinpoint/dalekpinpointbold-webfont.woff'),
+    url('assets/fonts/dalek-pinpoint/dalekpinpointbold-webfont.woff2');
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -50,10 +56,16 @@ footer {
     padding: 5%;
 }
 
+/* default to arial font for input fields */
+.contact-form input {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .directionsBtn {
     width: 50%;
     height: 30%;
-    border-radius: 20px;
+    min-width: 200px;
+    border-radius: 30px;
     background-color: transparent;
     box-shadow: none;
     transition: background-color .4s, transform .4s;
@@ -184,7 +196,7 @@ footer {
 }
 
 .squares-div {
-    padding: 10% 0;
+    padding: 10% 10%;
     justify-content: space-around;
     width: 90%;
     margin: 0 auto;
@@ -203,6 +215,10 @@ footer {
         background-color: rgba(0, 0, 0, .8);
         padding: 1%;
     }
+
+    .map-info {
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -214,6 +230,7 @@ footer {
 
     .contact-div {
         flex-direction: column;
+        padding-top: 5%;
     }
 
     .contact-form {
@@ -230,6 +247,7 @@ footer {
 
     .directions-div {
         flex-direction: column-reverse;
+        padding-top: 5%;
     }
 
     .map-div {
@@ -273,6 +291,10 @@ footer {
         padding: 2%;
     }
 
+    .emailAddress {
+        word-break: break-word;
+    }
+
     .footer-info {
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -296,7 +318,7 @@ footer {
     .squares-div {
         flex-direction: column;
         justify-content: space-between;
-        height: 330vw;
+        height: 280vw;
     }
 
     .square-link {
