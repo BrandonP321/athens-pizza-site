@@ -14,6 +14,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Roman SD";
+    font-weight: bold;
+}
+
 nav {
     height: 70px;
     font-family: 'Greek';
@@ -30,8 +35,9 @@ footer {
     text-align: center;
 }
 
-.contact-anchor {
+#contact-anchor {
     position: relative;
+    top: -70px;
 }
 
 .contact-desc {
@@ -85,8 +91,16 @@ footer {
     padding-top: 5%;
 }
 
+.hidden-square-text {
+    display: none;
+}
+
 .icon {
-    width: 40%;
+    width: 100%;
+}
+
+.icon-link {
+    width: 10%;
 }
 
 .map {
@@ -136,17 +150,6 @@ footer {
     transform: scale(1.1)
 }
 
-.overlay-about {
-}
-
-.overlay-community {
-
-}
-
-.overlay-menu {
-
-}
-
 .restaurant-food {
     width: 100%;
 }
@@ -180,14 +183,124 @@ footer {
     width: 30%;
 }
 
-/* .square:hover {
-    transform: scale(1.1);
-} */
-
 .squares-div {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    justify-content: space-between;
-    width: 60%;
+    padding: 10% 0;
+    justify-content: space-around;
+    width: 90%;
     margin: 0 auto;
+}
+
+.square-text {
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-info {
+        width: 90%;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, .8);
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-desc {
+        width: 100%;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .contact-div {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .directionsBtn {
+        height: 7vw;
+        min-height: 2rem;
+        min-width: 200px;
+        border-radius: 30px;
+    }
+
+    .directions-div {
+        flex-direction: column-reverse;
+    }
+
+    .map-div {
+        width: 100%;
+        height: 80vw;
+    }
+
+    .map-info {
+        width: 100%;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .socials {
+        width: 100%;
+    }
+
+    .squares-div {
+        width: 100%;
+    }
+
+    .square-link {
+        text-align: center;
+    }
+
+    .square-text {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        background-color: black !important;
+    }
+    
+    main {
+        margin-top: 70px;
+    }
+    
+    footer {
+        padding: 2%;
+    }
+
+    .footer-info {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-bottom: 2%;
+    }
+
+    .hidden-square-text {
+        display: block;
+        padding: 2%;
+        color: black;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .squares-div {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 330vw;
+    }
+
+    .square-link {
+        width: 85%;
+        margin: 0 auto;
+    }
 }
