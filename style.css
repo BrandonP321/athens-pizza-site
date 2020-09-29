@@ -4,6 +4,12 @@
     url('assets/fonts/webfontkit-20200928-033846/xtra-webfont.woff2');
 }
 
+@font-face {
+    font-family: "Roman SD";
+    src: url('assets/fonts/roman-sd/roman_sd-webfont.woff'),
+    url('assets/fonts/roman-sd/roman_sd-webfont.woff2')
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -80,8 +86,7 @@ footer {
 }
 
 .icon {
-    height: 100px;
-    width: 100px;
+    width: 40%;
 }
 
 .map {
@@ -115,6 +120,7 @@ footer {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    font-family: 'Greek';
     text-align: center;
     padding: calc(50% - 24px) 10% 0 10%;
     z-index: 50;
