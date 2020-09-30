@@ -41,6 +41,10 @@ footer {
     text-align: center;
 }
 
+.footer-info h3 {
+    text-decoration: underline;
+}
+
 #contact-anchor {
     position: relative;
     top: -70px;
@@ -215,9 +219,10 @@ footer {
         width: 90%;
     }
 
-    .navbar-collapse {
+    #navbarNavAltMarkup {
         background-color: rgba(0, 0, 0, .8);
         padding: 1%;
+        width: 100vw;
     }
 
     .map-info {
