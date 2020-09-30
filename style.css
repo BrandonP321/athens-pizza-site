@@ -37,10 +37,23 @@ footer {
     text-align: center;
 }
 
+.footer-info {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
 .footer-info h3 {
     text-decoration: underline;
 }
 
+.icon {
+    width: 100%;
+}
+
+.icon-link {
+    width: 10%;
+}
 
 .navbar {
     background-color: rgba(0, 0, 0, .5);
