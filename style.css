@@ -31,10 +31,6 @@ nav {
     font-size: 1.5rem;
 }
 
-main {
-    /* margin-top: 70px; */
-}
-
 footer {
     background-color: black;
     color: white;
@@ -45,98 +41,6 @@ footer {
     text-decoration: underline;
 }
 
-#contact-anchor {
-    position: relative;
-    top: -70px;
-}
-
-.contact-desc {
-    width: 50%;
-    padding: 10%;
-}
-
-.contact-form {
-    width: 50%;
-    padding: 5%;
-}
-
-/* default to arial font for input fields */
-.contact-form input {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.directionsBtn {
-    width: 50%;
-    height: 30%;
-    min-width: 200px;
-    border-radius: 30px;
-    background-color: transparent;
-    box-shadow: none;
-    transition: background-color .4s, transform .4s;
-}
-
-.directionsBtn:hover {
-    background-color: #f9be1a;
-    transform: scale(1.1);
-}
-
-.directionsBtn:focus {
-    outline: none;
-}
-
-.directions-form {
-    width: 100%;
-    height: 100%;
-}
-
-.footer-info {
-    width: 50%;
-    margin: 0 auto;
-    justify-content: space-around;
-}
-
-.hero {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-}
-
-.hero-div {
-    background-color: black;
-    padding: 2%;
-    padding-top: 5%;
-}
-
-.hidden-square-text {
-    display: none;
-}
-
-.icon {
-    width: 100%;
-}
-
-.icon-link {
-    width: 10%;
-}
-
-.location-header, .contact-header {
-    font-family: "Roman SD", Arial, Helvetica, sans-serif;
-}
-
-.map {
-    width: 100%;
-    height: 100%;
-}
-
-.map-div {
-    width: 50%;
-    padding: 2%;
-}
-
-.map-info {
-    width: 50%;
-    padding: 10%;
-}
 
 .navbar {
     background-color: rgba(0, 0, 0, .5);
@@ -147,39 +51,6 @@ footer {
     color: #f9be1a !important;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-family: 'Roman SD', Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: calc(50% - 24px) 10% 0 10%;
-    z-index: 50;
-    transition: transform .5s, opacity .5s;
-}
-
-.overlay:hover {
-    transform: scale(1.1);
-    opacity: 0;
-}
-
-.overlay:hover ~ .square{
-    transform: scale(1.1)
-}
-
-.restaurant-food {
-    width: 100%;
-}
-
-.restaurant-food-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-}
 
 .socials {
     width: 50%;
@@ -189,29 +60,6 @@ footer {
 
 .socials, .footer-info {
     padding: 1%;
-}
-
-.square {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: transform .5s;
-}
-
-.square-link {
-    position: relative;
-    width: 30%;
-}
-
-.squares-div {
-    padding: 10% 10%;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.square-text {
-    font-size: 2vw;
 }
 
 @media screen and (max-width: 992px) {
@@ -224,76 +72,17 @@ footer {
         padding: 1%;
         width: 100vw;
     }
-
-    .map-info {
-        padding-right: 0;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .contact-desc {
-        width: 100%;
-        text-align: center;
-        padding: 3%;
-    }
-
-    .contact-div {
-        flex-direction: column;
-        padding-top: 5%;
-    }
-
-    .contact-form {
-        width: 100%;
-        padding-top: 0;
-    }
-
-    .directionsBtn {
-        height: 7vw;
-        min-height: 2rem;
-        min-width: 200px;
-        border-radius: 30px;
-    }
-
-    .directions-div {
-        flex-direction: column-reverse;
-        padding-top: 5%;
-    }
-
-    .map-div {
-        width: 100%;
-        height: 80vw;
-    }
-
-    .map-info {
-        width: 100%;
-        text-align: center;
-        padding: 5%;
-    }
-
     .socials {
         width: 100%;
-    }
-
-    .squares-div {
-        width: 100%;
-    }
-
-    .square-link {
-        text-align: center;
-    }
-
-    .square-text {
-        font-size: 2.5vw;
     }
 }
 
 @media screen and (max-width: 500px) {
     nav {
         background-color: black !important;
-    }
-    
-    main {
-        margin-top: 70px;
     }
     
     footer {
@@ -310,30 +99,8 @@ footer {
         padding-bottom: 2%;
     }
 
-    .hidden-square-text {
-        display: block;
-        padding: 2%;
-        color: black;
-        font-family: "Roman SD", Arial, Helvetica, sans-serif;
-        font-size: 7vw;
-    }
-
     .navbar-brand {
         font-size: 2rem;
     }
 
-    .overlay {
-        display: none;
-    }
-
-    .squares-div {
-        flex-direction: column;
-        justify-content: space-between;
-        height: 280vw;
-    }
-
-    .square-link {
-        width: 85%;
-        margin: 0 auto;
-    }
 }
