@@ -37,6 +37,7 @@
 
         <div class='accordion' id='menuAccordion'>
 
+            <!-- Pizza collapse -->
             <div class='card'>
                 <div class='card-header' id='pizzaHeading'>
                     <h2 class='mb-0'>
@@ -52,10 +53,67 @@
                         autem
                         sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
                         Obcaecati laboriosam ipsum aperiam.
+
+
+                        <!-- pizza sub accordion -->
+                        <div class='accordion' id='pizzaSubAccordion'>
+
+                            <div class='card'>
+                                <div class='card-header' id='pizzaMenuHeading'>
+                                    <h2 class='mb-0'>
+                                        <button class='btn btn-link btn-block text-left' type='button'
+                                            data-toggle='collapse' data-target='#pizzaMenuCollapse' aria-expanded='true'
+                                            aria-controls='pizzaMenuCollapse'>
+                                            Pizza Menu
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class='collapse' id='pizzaMenuCollapse' aria-labelledby='pizzaMenuHeading'
+                                    data-parent='#pizzaSubAccordion'>
+                                    <div class="card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati
+                                        commodi nihil
+                                        autem
+                                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde
+                                        inventore
+                                        temporibus.
+                                        Obcaecati laboriosam ipsum aperiam.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='card'>
+                                <div class='card-header' id='customPizzaHeading'>
+                                    <h2 class='mb-0'>
+                                        <button class='btn btn-link btn-block text-left' type='button'
+                                            data-toggle='collapse' data-target='#customPizzaCollapse'
+                                            aria-expanded='true' aria-controls='customPizzaCollapse'>
+                                            Create Your Own Pizza
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class='collapse' id='customPizzaCollapse' aria-labelledby='customPizzaHeading'
+                                    data-parent='#pizzaSubAccordion'>
+                                    <div class="card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati
+                                        commodi nihil
+                                        autem
+                                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde
+                                        inventore
+                                        temporibus.
+                                        Obcaecati laboriosam ipsum aperiam.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
 
+            <!-- Pasta collapse -->
             <div class='card'>
                 <div class='card-header' id='pastaHeading'>
                     <h2 class='mb-0'>
@@ -71,10 +129,37 @@
                         autem
                         sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
                         Obcaecati laboriosam ipsum aperiam.
+
+                        <!-- pasta menu options -->
+                        <div class='menuOptionsDiv'>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Fettucini Alferedo</div>
+                                <div class='menuItemDescription'>Ribbon style pasta sautéed in garlic butter, rich
+                                    creamy with Parmesan, topped with parsley</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Fettucini Louie</div>
+                                <div class='menuItemDescription'>Ribbon style pasta sautéed with zucchini and boneless
+                                    chicken in our rich creamy Alfredo sauce</div>
+                            </div>
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Mediterranean Chicken</div>
+                                <div class='menuItemDescription'>Sautéed boneless chicken with vegetables, topped with
+                                    our meat sauce fettuccine noodles with Alfredo sauce</div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- Salads collapse -->
             <div class='card'>
                 <div class='card-header' id='saladsHeading'>
                     <h2 class='mb-0'>
@@ -86,14 +171,95 @@
                 </div>
                 <div class='collapse' id='saladsCollapse' aria-labelledby='saladsHeading' data-parent='#menuAccordion'>
                     <div class="card-body">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati commodi nihil
-                        autem
-                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
-                        Obcaecati laboriosam ipsum aperiam.
+                        All of our salads are served with garlic Bread
+
+                        <!-- salad menu options -->
+                        <div class='menuOptionsDiv'>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Chef's Salad</div>
+                                <div class='menuItemDescription'>
+                                    Tossed greens with ham, cheese, tomatoes, salami,
+                                    mushrooms, onions, green peppers, black olives
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Village Salad</div>
+                                <div class='menuItemDescription'>
+                                    Tomatoes, cucumbers, green peppers, onions olives
+                                    tossed in Greek dressing and topped with feta cheese
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Greek Salad</div>
+                                <div class='menuItemDescription'>
+                                    Iceberg lettuce, tomatoes, cucumbers, green peppers,
+                                    onions, Kalamata olives (may contain pits) in our special Greek style dressing and
+                                    topped with feta cheese
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Chicken Caesar Salad</div>
+                                <div class='menuItemDescription'>
+                                    Romaine lettuce, strips of grilled chicken, croutons,
+                                    Parmesan cheese & a delicious caesar dressing
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Caesar Salad</div>
+                                <div class='menuItemDescription'>
+                                    Romaine lettuce, croutons, Parmesan cheese and Caesar
+                                    dressing<br>Add Shrimp extra $$
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Beef or Chicken Gyro Greek Salad</div>
+                                <div class='menuItemDescription'>
+                                    Greek salad topped with strips of Beef or Chicken Gyro meat
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Shrimp Salad</div>
+                                <div class='menuItemDescription'>
+                                    Iceberg lettuce, fresh shrimp, and tomatoes
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Side Green Salad (no bread)</div>
+                                <div class='menuItemDescription'>
+                                    Iceberg lettuce, shredded cabbage, carrots and topped
+                                    with our delicious croutons
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Minestrone Soup, House Salad, and Garlic Bread Combo</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- Sandwhiches collapse -->
             <div class='card'>
                 <div class='card-header' id='SandwhichesHeading'>
                     <h2 class='mb-0'>
@@ -103,35 +269,320 @@
                         </button>
                     </h2>
                 </div>
-                <div class='collapse' id='SandwhichesCollapse' aria-labelledby='SandwhichesHeading' data-parent='#menuAccordion'>
+                <div class='collapse' id='SandwhichesCollapse' aria-labelledby='SandwhichesHeading'
+                    data-parent='#menuAccordion'>
                     <div class="card-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati commodi nihil
                         autem
                         sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
                         Obcaecati laboriosam ipsum aperiam.
+
+
+                        <!-- sandwhiches sub accordion -->
+                        <div class='accordion' id='sandwhichesSubAccordion'>
+
+                            <!-- grinders section -->
+                            <div class='card'>
+                                <div class='card-header' id='grindersHeading'>
+                                    <h2 class='mb-0'>
+                                        <button class='btn btn-link btn-block text-left' type='button'
+                                            data-toggle='collapse' data-target='#grindersCollapse' aria-expanded='true'
+                                            aria-controls='grindersCollapse'>
+                                            Hot Oven Grinders
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class='collapse' id='grindersCollapse' aria-labelledby='grindersHeading'
+                                    data-parent='#sandwhichesSubAccordion'>
+                                    <div class="card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati
+                                        commodi nihil
+                                        autem
+                                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde
+                                        inventore
+                                        temporibus.
+                                        Obcaecati laboriosam ipsum aperiam.
+
+                                        <!-- grinders menu options -->
+                                        <div class='menuOptionsDiv'>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Ham</div>
+                                                <div class='menuItemDescription'>With Mayonnaise, Lettuce, Provolone
+                                                    Cheese & Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>Canadian Style Bacon</div>
+                                                <div class='menuItemDescription'>With Mayonnaise, Lettuce, Provolone
+                                                    Cheese & Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>Roast Beef</div>
+                                                <div class='menuItemDescription'>With Mayonnaise, Lettuce, Provolone
+                                                    Cheese & Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Pepperoni</div>
+                                                <div class='menuItemDescription'>With Mayonnaise, Lettuce, Provolone
+                                                    Cheese & Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>Turkey</div>
+                                                <div class='menuItemDescription'>With Mayonnaise, Lettuce, Provolone
+                                                    Cheese & Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>Salami</div>
+                                                <div class='menuItemDescription'>With Mayonnaise, Lettuce, Provolone
+                                                    Cheese & Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Cold Cut</div>
+                                                <div class='menuItemDescription'>(served hot) Canadian Ham & Salami
+                                                    Mayonnaise, Lettuce, Provolone Cheese & Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>Pastrami</div>
+                                                <div class='menuItemDescription'>With Mayonnaise, Lettuce, Provolone
+                                                    Cheese & Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>Vegetarian</div>
+                                                <div class='menuItemDescription'>With Mayonnaise, Lettuce, Provolone
+                                                    Cheese, Onions Peppers, Black Olives, Tomatoes, Mushrooms &
+                                                    Seasoning</div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Meatball</div>
+                                                <div class='menuItemDescription'>With Meat Sauce and Provolone Cheese
+                                                </div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>BBQ Chicken</div>
+                                                <div class='menuItemDescription'>BBQ sauce, Chicken Provolone Cheese &
+                                                    Seasoning</div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- other sandwhiches section -->
+                            <div class='card'>
+                                <div class='card-header' id='otherSandwhichesHeading'>
+                                    <h2 class='mb-0'>
+                                        <button class='btn btn-link btn-block text-left' type='button'
+                                            data-toggle='collapse' data-target='#otherSandwhichesCollapse'
+                                            aria-expanded='true' aria-controls='otherSandwhichesCollapse'>
+                                            Other Sandwhiches
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class='collapse' id='otherSandwhichesCollapse'
+                                    aria-labelledby='otherSandwhichesHeading' data-parent='#sandwhichesSubAccordion'>
+                                    <div class="card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati
+                                        commodi nihil
+                                        autem
+                                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde
+                                        inventore
+                                        temporibus.
+                                        Obcaecati laboriosam ipsum aperiam.
+
+                                        <!-- dessert menu options -->
+                                        <div class='menuOptionsDiv'>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Clubhouse Sandwhich</div>
+                                                <div class='menuItemDescription'>
+                                                    Triple decker of ham, bacon, cheese,
+                                                    Canadian bacon, lettuce, tomato & mayonnaise on grilled white bread
+                                                </div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>BLT</div>
+                                                <div class='menuItemDescription'>
+                                                    Bacon, lettuce, tomato & mayonnaise on
+                                                    grilled white bread
+                                                </div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>Ham and Cheese Sandwhich</div>
+                                                <div class='menuItemDescription'>
+                                                    Ham, cheese & mayonnaise on grilled
+                                                    white bread
+                                                </div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Grilled Cheese Sandwhich</div>
+                                                <div class='menuItemDescription'>
+                                                    Melted provolone cheese on grilled
+                                                    white bread
+                                                </div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>BCT</div>
+                                                <div class='menuItemDescription'>
+                                                    Bacon, cheese, tomato & mayonnaise on
+                                                    grilled white bread
+                                                </div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>Half Hot Oven Grinder Special</div>
+                                                <div class='menuItemDescription'>
+                                                    Choice of ham, Canadian Bacon,
+                                                    Pepperoni, Turkey, Vegetarian, Meatball, Roast Beef, Cold Cut,
+                                                    Pastrami, BBQ Chicken or Salami
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
 
+            <!-- Italian dishes collapse -->
             <div class='card'>
                 <div class='card-header' id='italianDishesHeading'>
                     <h2 class='mb-0'>
                         <button class='btn btn-link btn-block text-left' type='button' data-toggle='collapse'
-                            data-target='#italianDishesCollapse' aria-expanded='true' aria-controls='italianDishesCollapse'>
-                            ItalianDishes
+                            data-target='#italianDishesCollapse' aria-expanded='true'
+                            aria-controls='italianDishesCollapse'>
+                            Italian Dishes
                         </button>
                     </h2>
                 </div>
-                <div class='collapse' id='italianDishesCollapse' aria-labelledby='italianDishesHeading' data-parent='#menuAccordion'>
+                <div class='collapse' id='italianDishesCollapse' aria-labelledby='italianDishesHeading'
+                    data-parent='#menuAccordion'>
                     <div class="card-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati commodi nihil
                         autem
-                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
+                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore
+                        temporibus.
                         Obcaecati laboriosam ipsum aperiam.
+
+                        <!-- Italian dishes menu options -->
+                        <div class='menuOptionsDiv'>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Spaghetti</div>
+                                <div class='menuItemDescription'>With meat sauce or marinara<br>OR<br>With meatballs or
+                                    mushrooms</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Baked Spaghetti</div>
+                                <div class='menuItemDescription'>Spaghetti topped with cheese with meat sauce baked in
+                                    the oven<br>Add meatballs or mushrooms extra $$</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Baked Lasagna</div>
+                                <div class='menuItemDescription'>With meat sauce or marinara<br>OR<br>With meatballs or
+                                    mushrooms</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Baked Ravioli</div>
+                                <div class='menuItemDescription'>
+                                    Pasta stuffed with served our meat sauce and topped
+                                    with blended cheeses<br>With meat sauce or marinara<br>OR<br>With meatballs or
+                                    mushrooms
+                                </div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Baked Half Chicken and Lasagna</div>
+                                <div class='menuItemDescription'>Fresh Washington chicken on top of our delicious
+                                    lasagna in meat sauce & topped with cheese</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Baked Spareribs and Lasagna</div>
+                                <div class='menuItemDescription'>Choice pork spareribs on top of our delicious lasagna
+                                    in meat sauce & topped with cheese</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Cannelloni</div>
+                                <div class='menuItemDescription'>Tube shaped pasta, stuffed with beef & seasonings &
+                                    served our meat sauce and topped with cheese</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Manicotti</div>
+                                <div class='menuItemDescription'>Tube shaped pasta stuffed with ricotta cheese, baked in
+                                    our meat sauce (marinara on request) and topped with cheese</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Half Barbecued Chicken</div>
+                                <div class='menuItemDescription'>Half a bbq chicken spaghetti with meat sauce</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Barbecued Pork Spareribs</div>
+                                <div class='menuItemDescription'>Bbq pork spareribs spaghetti with meat sauce</div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- Appetizers collapse -->
             <div class='card'>
                 <div class='card-header' id='appetizersHeading'>
                     <h2 class='mb-0'>
@@ -141,16 +592,91 @@
                         </button>
                     </h2>
                 </div>
-                <div class='collapse' id='appetizersCollapse' aria-labelledby='appetizersHeading' data-parent='#menuAccordion'>
+                <div class='collapse' id='appetizersCollapse' aria-labelledby='appetizersHeading'
+                    data-parent='#menuAccordion'>
                     <div class="card-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati commodi nihil
                         autem
-                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
+                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore
+                        temporibus.
                         Obcaecati laboriosam ipsum aperiam.
+
+                        <!-- Appetizers menu options -->
+                        <div class='menuOptionsDiv'>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Whole Cheese Bread</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>1/2 Cheese Bread</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Whole Cheese Bread w/ Sauce</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>1/2 Cheese Bread w/ Sauce</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Whole Garlic Bread</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>1/2 Garlic Bread</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Whole Garlic Bread w/ Sauce</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>1/2 Garlic Bread w/ Sauce</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Pita Bread w/ Sauce</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Side Spaghetti Sauce or marinara</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Freshly Tossed Green Salad</div>
+                                <div class='menuItemDescription'></div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- Kid's menu collapse -->
             <div class='card'>
                 <div class='card-header' id='kidsMenusHeading'>
                     <h2 class='mb-0'>
@@ -160,16 +686,55 @@
                         </button>
                     </h2>
                 </div>
-                <div class='collapse' id='kidsMenusCollapse' aria-labelledby='kidsMenusHeading' data-parent='#menuAccordion'>
+                <div class='collapse' id='kidsMenusCollapse' aria-labelledby='kidsMenusHeading'
+                    data-parent='#menuAccordion'>
                     <div class="card-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati commodi nihil
                         autem
-                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
+                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore
+                        temporibus.
                         Obcaecati laboriosam ipsum aperiam.
+
+                        <!-- kid's menu options -->
+                        <div class='menuOptionsDiv'>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Half Spaghetti with Meat Sauce</div>
+                                <div class='menuItemDescription'>This is a description of the this menu option</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Half Spaghetti with Meatballs</div>
+                                <div class='menuItemDescription'>This is a description of the this menu option</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Half Ravioli with Meat Sauce</div>
+                                <div class='menuItemDescription'>This is a description of the this menu option</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Half Ravioli with Meatballs</div>
+                                <div class='menuItemDescription'>This is a description of the this menu option</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Grilled Cheese Sandwhich</div>
+                                <div class='menuItemDescription'>This is a description of the this menu option</div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- Dessert collapse -->
             <div class='card'>
                 <div class='card-header' id='dessertHeading'>
                     <h2 class='mb-0'>
@@ -179,16 +744,42 @@
                         </button>
                     </h2>
                 </div>
-                <div class='collapse' id='dessertCollapse' aria-labelledby='dessertHeading' data-parent='#menuAccordion'>
+                <div class='collapse' id='dessertCollapse' aria-labelledby='dessertHeading'
+                    data-parent='#menuAccordion'>
                     <div class="card-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati commodi nihil
                         autem
-                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
+                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore
+                        temporibus.
                         Obcaecati laboriosam ipsum aperiam.
+
+                        <!-- dessert menu options -->
+                        <div class='menuOptionsDiv'>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$9.50</span>
+                                <div class='menuItemTitle'>Greek Baklava</div>
+                                <div class='menuItemDescription'>This is a description of the this menu option</div>
+                            </div>
+
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$7.50</span>
+                                <div class='menuItemTitle'>Mud Pie</div>
+                                <div class='menuItemDescription'>This is a description of the this menu option</div>
+                            </div>
+                            <div class='menuOption'>
+                                <span class='menuItemPrice'>$10.00</span>
+                                <div class='menuItemTitle'>Spumoni Ice Cream</div>
+                                <div class='menuItemDescription'>This is a description of the this menu option</div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- Beverages collapse -->
             <div class='card'>
                 <div class='card-header' id='beveragesHeading'>
                     <h2 class='mb-0'>
@@ -198,16 +789,179 @@
                         </button>
                     </h2>
                 </div>
-                <div class='collapse' id='beveragesCollapse' aria-labelledby='beveragesHeading' data-parent='#menuAccordion'>
+                <div class='collapse' id='beveragesCollapse' aria-labelledby='beveragesHeading'
+                    data-parent='#menuAccordion'>
                     <div class="card-body">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus obcaecati commodi nihil
-                        autem
-                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde inventore temporibus.
-                        Obcaecati laboriosam ipsum aperiam.
+                        Coke, Diet Coke, Sprite, Lemonade, Mr. Pibb & Barq's Root Beer, Fresh Brewed Tea, Milk, Hot
+                        Tea, and Coffee
+
+                        <!-- alcohol accordion inside of beverages collapsable menu -->
+                        <div class='accordion' id='alcoholAccordion'>
+
+                            <!-- bottled beer section -->
+                            <div class='card'>
+                                <div class='card-header' id='bottledBeerHeading'>
+                                    <h2 class='mb-0'>
+                                        <button class='btn btn-link btn-block text-left' type='button'
+                                            data-toggle='collapse' data-target='#bottledBeerCollapse'
+                                            aria-expanded='true' aria-controls='bottledBeerCollapse'>
+                                            Bottled Beer
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class='collapse' id='bottledBeerCollapse' aria-labelledby='bottledBeerHeading'
+                                    data-parent='#alcoholAccordion'>
+                                    <div class="card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus
+                                        obcaecati
+                                        commodi nihil
+                                        autem
+                                        sit distinctio numquam, minus impedit dolorem quas eum, repellendus unde
+                                        inventore
+                                        temporibus.
+                                        Obcaecati laboriosam ipsum aperiam.
+
+                                        <!-- dessert menu options -->
+                                        <div class='menuOptionsDiv'>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Dark Amber Bock</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>Mythos Greek Beer</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>Modelo Especial</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Corona Extra</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>Budweiser</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>Bud Light Lime</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>O'Doul's</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- draft Beer section -->
+                            <div class='card'>
+                                <div class='card-header' id='draftBeerHeading'>
+                                    <h2 class='mb-0'>
+                                        <button class='btn btn-link btn-block text-left' type='button'
+                                            data-toggle='collapse' data-target='#draftBeerCollapse' aria-expanded='true'
+                                            aria-controls='draftBeerCollapse'>
+                                            Draft Beer
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class='collapse' id='draftBeerCollapse' aria-labelledby='draftBeerHeading'
+                                    data-parent='#alcoholAccordion'>
+                                    <div class="card-body">
+                                        Glass & pitchers available
+
+                                        <!-- dessert menu options -->
+                                        <div class='menuOptionsDiv'>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Bud Light</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>Elysian Men's Room</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>Red Hook ESB</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- domestic wine section -->
+                            <div class='card'>
+                                <div class='card-header' id='domesticWineHeading'>
+                                    <h2 class='mb-0'>
+                                        <button class='btn btn-link btn-block text-left' type='button'
+                                            data-toggle='collapse' data-target='#domesticWineCollapse'
+                                            aria-expanded='true' aria-controls='domesticWineCollapse'>
+                                            Domestic Wine
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class='collapse' id='domesticWineCollapse' aria-labelledby='domesticWineHeading'
+                                    data-parent='#alcoholAccordion'>
+                                    <div class="card-body">
+                                        Glass, half carafe, & large carafe available
+
+                                        <!-- dessert menu options -->
+                                        <div class='menuOptionsDiv'>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$9.50</span>
+                                                <div class='menuItemTitle'>Merlot</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$7.50</span>
+                                                <div class='menuItemTitle'>Chardonnay</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                            <div class='menuOption'>
+                                                <span class='menuItemPrice'>$10.00</span>
+                                                <div class='menuItemTitle'>White Zinfandel</div>
+                                                <div class='menuItemDescription'></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
-
 
         </div>
 
