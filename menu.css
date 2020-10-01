@@ -2,8 +2,27 @@ main {
     margin-top: 70px;
 }
 
+.btn {
+    font-family: "Roman SD";
+    /* font-weight: bold; */
+    font-size: 3rem;
+}
+
+.card {
+    background-color: transparent;
+    border: 2px solid black !important;
+    width: 70%;
+    margin: 10px 10px;
+}
+
+/* work on only changing cards that are direct children of the body to be centered */
+body .card {
+    margin: 10px auto;
+}
+
 .menuOption {
-    padding: 5%;
+    padding: 3%;
+    border-bottom: 1px solid gray;
 }
 
 .menuOptionsDiv {
@@ -17,6 +36,7 @@ main {
 .menuItemPrice {
     position: absolute;
     right: 10%;
+    font-size: 1.5rem;
 }
 
 .menuItemTitle {
