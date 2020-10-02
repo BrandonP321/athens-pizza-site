@@ -1,46 +1,23 @@
-main {
-    margin-top: 70px;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
 }
 
-.btn {
-    font-family: "Roman SD";
-    /* font-weight: bold; */
-    font-size: 3rem;
+.foodMenusAside {
+    position: fixed;
+    top: 90px;
+    left: 5%;
+    width: 25%;
+    background-color: black;
+    padding: 1%;
+    border-radius: 10px;
 }
 
-.card {
-    background-color: transparent;
-    border: 2px solid black !important;
-    width: 70%;
-    margin: 10px 10px;
-}
-
-/* work on only changing cards that are direct children of the body to be centered */
-body .card {
-    margin: 10px auto;
-}
-
-.menuOption {
-    padding: 3%;
-    border-bottom: 1px solid gray;
-}
-
-.menuOptionsDiv {
-
-}
-
-.menuItemDescription {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.menuItemPrice {
-    position: absolute;
-    right: 10%;
-    font-size: 1.5rem;
-}
-
-.menuItemTitle {
-    font-family: "Roman SD", Arial, Helvetica, sans-serif;
-    font-size: 2vw;
-    margin-bottom: 2vw;
+.test-div {
+    width: 500px;
+    height: 500px;
+    background-color: salmon;
+    margin: 200px auto;
 }
