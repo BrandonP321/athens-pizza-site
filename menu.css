@@ -5,6 +5,13 @@ footer {
     display: none;
 }
 
+#allMenuOptionsDiv {
+    background-color: salmon;
+    margin-left: 35%;
+    width: 60%;
+    margin-top: 90px;
+}
+
 .foodMenusAside {
     position: fixed;
     top: 90px;
@@ -13,6 +20,10 @@ footer {
     background-color: black;
     padding: 1%;
     border-radius: 10px;
+}
+
+.menuOptions {
+    display: none;
 }
 
 .test-div {

@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- bootstrap navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="index.html">ATHENS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -33,6 +34,7 @@
         </div>
     </nav>
 
+    <!-- aside accordion for selecting food menu options -->
     <div class='foodMenusAside'>
 
         <div class='accordion' id='menuAccordion'>
@@ -50,17 +52,19 @@
                 <div class='collapse' id='pizzaCollapse' aria-labelledby='pizzaHeading' data-parent='#menuAccordion'>
                     <div class="card-body">
 
+                        <!-- pizza menu option -->
                         <div class='card-header' id='pizzaMenuHeading'>
                             <h2 class='mb-0'>
-                                <button class='btn btn-block text-left'>
+                                <button class='btn btn-block text-left' data-menu='#pizzaMenuOptions'>
                                     Pizza Menu
                                 </button>
                             </h2>
                         </div>
 
+                        <!-- create your own pizza option -->
                         <div class='card-header' id='customPizzaHeading'>
                             <h2 class='mb-0'>
-                                <button class='btn btn-block text-left'>
+                                <button class='btn btn-block text-left' data-menu='#customPizzaOptions'>
                                     Create Your Own Pizza
                                 </button>
                             </h2>
@@ -75,7 +79,8 @@
                 <div class='card-header' id='pastaHeading'>
                     <h2 class='mb-0'>
                         <button class='btn btn-block text-left' type='button' data-toggle='collapse'
-                            data-target='#pastaCollapse' aria-expanded='true' aria-controls='pastaCollapse'>
+                            data-target='#pastaCollapse' aria-expanded='false' aria-controls='pastaCollapse'
+                            data-menu='#pastaOptions'>
                             Pasta
                         </button>
                     </h2>
@@ -240,7 +245,31 @@
 
     </div>
 
-    <div class='test-div collapse show'></div>
+    <!-- div for all menu options divs -->
+    <div class='collapse' id='allMenuOptionsDiv' data-menuExpanded="false">
+
+        <div class='menuOptions' id='pizzaMenuOptions'>
+            pizza menu Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quisquam totam reprehenderit
+            magnam ipsa
+            quod, rerum tempore exercitationem consectetur eum molestiae veniam modi debitis sapiente nemo fuga
+            excepturi cum ipsam!
+        </div>
+
+        <div class='menuOptions' id='customPizzaOptions'>
+            custom pizza Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quisquam totam reprehenderit
+            magnam ipsa
+            quod, rerum tempore exercitationem consectetur eum molestiae veniam modi debitis sapiente nemo fuga
+            excepturi cum ipsam!
+        </div>
+
+        <div class='menuOptions' id='pastaOptions'>
+            Pasta Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quisquam totam reprehenderit magnam
+            ipsa
+            quod, rerum tempore exercitationem consectetur eum molestiae veniam modi debitis sapiente nemo fuga
+            excepturi cum ipsam!
+        </div>
+
+    </div>
 
     <footer>
         <div class='footer-info d-flex'>
@@ -269,6 +298,10 @@
         </div>
     </footer>
 
+    <!-- jQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery UI script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -279,10 +312,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <!-- jQuery script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- jQuery UI script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- local script -->
     <script src='menu.js'></script>
 </body>
