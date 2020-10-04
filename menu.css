@@ -60,3 +60,20 @@ footer {
 .menuTitleDiv {
     text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+    #allMenuOptionsDiv {
+        margin-left: 32%;
+        width: 68%;
+        margin-top: 90px;
+    }
+
+    .foodMenusAside {
+        width: 29%;
+        left: 1%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+}
