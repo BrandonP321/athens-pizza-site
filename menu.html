@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- jQuery UI stylesheet -->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- jQuery UI stylesheet -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- local general stylesheet -->
     <link rel='stylesheet' href='style.css'>
     <!-- local index stylesheet -->
@@ -33,6 +33,11 @@
             </div>
         </div>
     </nav>
+
+    <!-- button for smaller screens for user to pop up menu list -->
+    <button class='menuPopBtn'>
+        <p class='menuBtnText'>Menus</p>
+    </button>
 
     <!-- aside accordion for selecting food menu options -->
     <div class='foodMenusAside'>
@@ -905,50 +910,48 @@
             </div>
         </div>
 
-        <footer>
-            <div class='footer-info d-flex'>
-                <div class='hours'>
-                    <h3>Hours</h3>
-                    <p>Mon-Thurs: 11AM-9PM</p>
-                    <p>Fri-Sat: 11AM-10PM</p>
-                    <p>Sun: 12PM-9PM</p>
-                </div>
-                <div class='contact-info'>
-                    <h3>Reach Out</h3>
-                    <a class='emailAddress'
-                        href='mailto:Brothers@athenspizzaauburn.com'>Brothers@athenspizzaauburn.com</a>
-                    <p>(253) 939-7444</p>
-                </div>
-            </div>
-            <h3 class='follow-text'>Give us a follow!</h3>
-            <div class='socials d-flex'>
-                <!-- facebook link with svg -->
-                <a class='icon-link' href='https://www.facebook.com/Athenspizzaauburn' target='_blank'>
-                    <img class='icon' src='assets/img/facebook.svg' alt='facebook'>
-                </a>
-                <!-- instagram link with svg -->
-                <a class='icon-link' href='https://www.instagram.com/athenspizzaauburn/?hl=en' target='_blank'>
-                    <img class='icon' src='assets/img/instagram.svg' alt='instagram'>
-                </a>
-            </div>
-        </footer>
+    </div>
 
-        <!-- jQuery script -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- jQuery UI script -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <!-- bootstrap scripts -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
-        <!-- local script -->
-        <script src='menu.js'></script>
+    <footer>
+        <div class='footer-info d-flex'>
+            <div class='hours'>
+                <h3>Hours</h3>
+                <p>Mon-Thurs: 11AM-9PM</p>
+                <p>Fri-Sat: 11AM-10PM</p>
+                <p>Sun: 12PM-9PM</p>
+            </div>
+            <div class='contact-info'>
+                <h3>Reach Out</h3>
+                <a class='emailAddress' href='mailto:Brothers@athenspizzaauburn.com'>Brothers@athenspizzaauburn.com</a>
+                <p>(253) 939-7444</p>
+            </div>
+        </div>
+        <h3 class='follow-text'>Give us a follow!</h3>
+        <div class='socials d-flex'>
+            <!-- facebook link with svg -->
+            <a class='icon-link' href='https://www.facebook.com/Athenspizzaauburn' target='_blank'>
+                <img class='icon' src='assets/img/facebook.svg' alt='facebook'>
+            </a>
+            <!-- instagram link with svg -->
+            <a class='icon-link' href='https://www.instagram.com/athenspizzaauburn/?hl=en' target='_blank'>
+                <img class='icon' src='assets/img/instagram.svg' alt='instagram'>
+            </a>
+        </div>
+    </footer>
+
+    <!-- jQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- jQuery UI script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- local script -->
+    <script src='menu.js'></script>
 </body>
 
 </html>

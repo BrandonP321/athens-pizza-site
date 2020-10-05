@@ -48,7 +48,7 @@ footer {
 .menuItemPrice {
     position: absolute;
     right: 10%;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .menuItemTitle {
@@ -57,8 +57,15 @@ footer {
     width: 70%;
 }
 
+.menuTitle {
+    font-family: "Roman SD", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
 .menuTitleDiv {
     text-align: center;
+    margin-bottom: 4%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -74,6 +81,61 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px) {
-    
+/* make options whole width at 900px */
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .menuOption {
+        width: 100%;
+    }
+
+    .menuItemTitle, .menuItemPrice {
+        font-size: 3vw;
+    }
+
+    /* make the aside of menu options a hidden element that the user can pop up */
+    .foodMenusAside {
+        z-index: 100;
+        width: 60%;
+        left: auto;
+        right: -60%;
+    }
+
+    #allMenuOptionsDiv {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 90px;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .menuItemPrice {
+        right: 0;
+    }
+
+    .menuBtnText {
+        position: absolute;
+        top: calc(3vw);
+        left: 4vw;
+        font-size: 2.5vw;
+    }
+
+    .menuPopBtn {
+        position: fixed;
+        z-index: 100;
+        width: 20vw;
+        height: 10vw;
+        right: -5vw;
+        top: 90px;
+        border-radius: 10vw;
+        background-color: black;
+        color: white;
+        border-color: black;
+    }
+
+    .menuPopBtn:focus {
+        outline: none
+    }
 }
