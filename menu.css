@@ -1,46 +1,160 @@
-main {
-    margin-top: 70px;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
 }
 
-.btn {
-    font-family: "Roman SD";
-    /* font-weight: bold; */
-    font-size: 3rem;
+#allMenuOptionsDiv {
+    margin-left: 35%;
+    width: 60%;
+    margin-top: 90px;
+    /* change collapse animation speed */
+    -webkit-transition: height 1.5s ease-in-out;
+    -o-transition: height 1.5s ease-in-out;
+       transition: height 1.5s ease-in-out;
 }
 
-.card {
-    background-color: transparent;
-    border: 2px solid black !important;
-    width: 70%;
-    margin: 10px 10px;
-}
-
-/* work on only changing cards that are direct children of the body to be centered */
-body .card {
-    margin: 10px auto;
+.foodMenusAside {
+    position: fixed;
+    top: 90px;
+    left: 5%;
+    width: 25%;
+    max-height: 70%;
+    background-color: black;
+    padding: 1%;
+    border-radius: 10px;
+    overflow-y: auto;
 }
 
 .menuOption {
-    padding: 3%;
-    border-bottom: 1px solid gray;
+    position: relative;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.menuOptions {
+    display: none;
 }
 
 .menuOptionsDiv {
-
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .menuItemDescription {
     font-family: Arial, Helvetica, sans-serif;
+    padding-right: 1%;
 }
 
 .menuItemPrice {
     position: absolute;
     right: 10%;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .menuItemTitle {
     font-family: "Roman SD", Arial, Helvetica, sans-serif;
-    font-size: 2vw;
-    margin-bottom: 2vw;
+    font-size: 1.5vw;
+    width: 70%;
+}
+
+.menuPopBtn {
+    display: none;
+}
+
+.menuTitle {
+    font-family: "Roman SD", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.menuTitleDiv {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+@media screen and (max-width: 1200px) {
+    #allMenuOptionsDiv {
+        margin-left: 32%;
+        width: 68%;
+        margin-top: 90px;
+    }
+
+    .foodMenusAside {
+        width: 29%;
+        left: 1%;
+    }
+}
+
+/* make options whole width at 900px */
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .menuOption {
+        width: 100%;
+    }
+
+    .menuItemTitle, .menuItemPrice {
+        font-size: 3vw;
+    }
+
+    .menuTitle {
+        font-size: 5vw;
+    }
+
+    /* make the aside of menu options a hidden element that the user can pop up */
+    .foodMenusAside {
+        z-index: 100;
+        width: 60%;
+        left: auto;
+        right: -60%;
+    }
+
+    #allMenuOptionsDiv {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 90px;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .menuItemPrice {
+        right: 0;
+    }
+
+    .menuBtnText {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        font-size: 2.5vw;
+    }
+
+    .menuPopBtn {
+        display: block;
+        position: fixed;
+        z-index: 100;
+        width: 20vw;
+        height: 10vw;
+        right: -5vw;
+        top: 90px;
+        border-radius: 10vw;
+        background-color: black;
+        color: white;
+        border-color: black;
+    }
+
+    .menuPopBtn:focus {
+        outline: none
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menuBtnText {
+        font-size: 1rem;
+    }
 }

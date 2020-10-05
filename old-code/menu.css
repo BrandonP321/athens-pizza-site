@@ -1,0 +1,60 @@
+main {
+    margin-top: 70px;
+}
+
+.btn {
+    font-family: "Roman SD";
+    /* font-weight: bold; */
+    font-size: 3rem;
+}
+
+.card {
+    background-color: transparent;
+    /* border: 2px solid black !important; */
+    border: none;
+    width: 70vw;
+    margin: 10px 10px;
+}
+
+.card-body {
+    width: 70vw;
+}
+
+.card-header {
+    background-color: transparent;
+}
+
+/* work on only changing cards that are direct children of the body to be centered */
+body .card {
+    margin: 10px auto;
+}
+
+.menuOption {
+    position: relative;
+    padding: 3%;
+    width: 50%;
+}
+
+.menuOptionsDiv {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menuItemDescription {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuItemPrice {
+    position: absolute;
+    right: 10%;
+    font-size: 1.5rem;
+}
+
+.menuItemTitle {
+    font-family: "Roman SD", Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    width: 80%;
+}
