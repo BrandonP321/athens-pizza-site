@@ -33,11 +33,6 @@ $('.btn').on('click', function () {
             menuToOffScreen()
         }
 
-        // probably won't need to scroll since window auto scrolls with collapse
-        // $('body, html').animate({scrollTop: 0}, 5000, function() {
-        //     console.log('at top')
-        // })
-
         menuToDisplay = btnClicked.attr('data-menu')
 
         if (isExpanded == 'true') {
@@ -55,7 +50,10 @@ $('#allMenuOptionsDiv').on('hidden.bs.collapse', function () {
     // run collapse('show') now that the div is hidden
     $('.menuOptions').css('display', 'none')
     $(menuToDisplay).css('display', 'block')
-    $('#allMenuOptionsDiv').collapse('show')
+    // current fix for .collapse('show') problems on mobile
+    setTimeout(function() {
+        $('#allMenuOptionsDiv').collapse('show')
+    }, 50)
 })
 
 $('.menuPopBtn').on('click', function() {
