@@ -21,11 +21,19 @@ function menuToOffScreen() {
     menuIsCenter = false
 }
 
-$('.btn').on('click', function () {
+// on load, if screen is small enough, fade in menu button and move menu to center of screen
+function menuOnLoad() {
+    $('.menuPopBtn').animate({opacity: '1'}, 1000, function() {
+        setTimeout(menuToCenter, 200)
+    })
+}
+
+$('.btn').on('click', function (event) {
     const btnClicked = $(this)
     const allMenuOptionsDiv = $('#allMenuOptionsDiv')
     const isExpanded = allMenuOptionsDiv.attr('data-menuExpanded')
 
+    console.log(event.target.hasAttribute('data-menu'))
     // only change menu options display if the clicked btn has the data-menu attribute
     if (btnClicked.attr('data-menu')) {
 
@@ -43,6 +51,8 @@ $('.btn').on('click', function () {
             $(menuToDisplay).css('display', 'block')
             allMenuOptionsDiv.collapse('show')
         }
+    } else if (event.target) {
+
     }
 })
 
@@ -63,3 +73,5 @@ $('.menuPopBtn').on('click', function() {
         menuToCenter()
     }
 })
+
+menuOnLoad()
