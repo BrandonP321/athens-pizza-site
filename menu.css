@@ -9,6 +9,10 @@ footer {
     margin-left: 35%;
     width: 60%;
     margin-top: 90px;
+    /* change collapse animation speed */
+    -webkit-transition: height 1.5s ease-in-out;
+    -o-transition: height 1.5s ease-in-out;
+       transition: height 1.5s ease-in-out;
 }
 
 .foodMenusAside {
@@ -57,6 +61,10 @@ footer {
     width: 70%;
 }
 
+.menuPopBtn {
+    display: none;
+}
+
 .menuTitle {
     font-family: "Roman SD", Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -95,6 +103,10 @@ footer {
         font-size: 3vw;
     }
 
+    .menuTitle {
+        font-size: 5vw;
+    }
+
     /* make the aside of menu options a hidden element that the user can pop up */
     .foodMenusAside {
         z-index: 100;
@@ -117,12 +129,13 @@ footer {
 
     .menuBtnText {
         position: absolute;
-        top: calc(3vw);
-        left: 4vw;
+        top: 25%;
+        left: 10%;
         font-size: 2.5vw;
     }
 
     .menuPopBtn {
+        display: block;
         position: fixed;
         z-index: 100;
         width: 20vw;
@@ -137,5 +150,11 @@ footer {
 
     .menuPopBtn:focus {
         outline: none
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menuBtnText {
+        font-size: 1rem;
     }
 }

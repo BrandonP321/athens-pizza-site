@@ -5,8 +5,8 @@ function menuToCenter() {
     const menuPopBtn = $('.menuPopBtn')
     const menuAside = $('.foodMenusAside')
 
-    menuPopBtn.animate({right: '55%'})
-    menuAside.animate({right: 0})
+    menuPopBtn.animate({right: '55%'}, 500)
+    menuAside.animate({right: 0}, 500)
 
     menuIsCenter = true
 }
@@ -15,8 +15,8 @@ function menuToOffScreen() {
     const menuPopBtn = $('.menuPopBtn')
     const menuAside = $('.foodMenusAside')
 
-    menuPopBtn.animate({right: "-5%"})
-    menuAside.animate({right: '-60vw'})
+    menuPopBtn.animate({right: "-5%"}, 500)
+    menuAside.animate({right: '-60vw'}, 500)
 
     menuIsCenter = false
 }
@@ -33,7 +33,10 @@ $('.btn').on('click', function () {
             menuToOffScreen()
         }
 
-        $(window).scrollTop(0)
+        // probably won't need to scroll since window auto scrolls with collapse
+        // $('body, html').animate({scrollTop: 0}, 5000, function() {
+        //     console.log('at top')
+        // })
 
         menuToDisplay = btnClicked.attr('data-menu')
 
